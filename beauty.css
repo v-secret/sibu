@@ -9,6 +9,7 @@ body{
 	font-weight: 400;
 	color: black;
 	font-style: normal;
+	background-color: rgb(245,245,247);
 }
 
 body.lock{
@@ -293,7 +294,203 @@ header .header-contain{
 	}
 }
 
+.chapternav{
+	background-color: rgb(229,229,234);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    height: 80px;
+    z-index: 500;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+}
 
+.chapternav .chapternav-wrapper{
+	position: relative;
+	height: 100%;
+	z-index: 1;
+}
+
+.chapternav .chapternav-wrapper .chapternav-items{
+	margin: 0;
+	padding-bottom: 49px;
+	overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    list-style: none;
+}
+
+.chapternav-item{
+	animation: chapternav-slidein 350ms backwards;
+	display: inline-block;
+    vertical-align: top;
+    margin: 0 -.11765em;
+    padding: 0 20px;
+}
+
+.link-button{
+	background-color: initial;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.link-button.active img{
+	border: solid 2px rgb(105, 22, 117);
+}
+
+.chapternav-item .chapternav-link{
+	color: #000;
+	display: block;
+    padding: 0;
+    margin-top: 3px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.chapternav-item .chapternav-link img{
+	width: 54px;
+    height: 54px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.chapternav-item .chapternav-link span{
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    display: block;
+    margin: 0;
+}
+
+.wrapper-content{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.main-container-1{
+	width: 100%;
+	height: auto;
+	margin: 40px 0 0 0;
+	display: block;
+}
+
+.main-container-1 .main-container-box{
+	margin: 0 auto;
+	max-width: 980px;
+	display: block;
+	overflow: hidden;
+}
+
+.main-container-1 .main-container-box .sub-title{
+	width: 100%;
+	height: auto;
+	padding: 25px 0;
+	background-color: #fff;
+	border-radius: 30px;
+}
+
+.main-container-1 .main-container-box .sub-title h4{
+	font-size: 36px;
+	font-weight: 700;
+	margin: 0 15px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-container-1 .main-container-box .grid-container{
+	grid-gap: 25px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	padding: 25px 0;
+	margin: 0;
+	overflow: auto;
+}
+
+.main-container-1 .main-container-box .grid-container .image-box img{
+	width: 100%;
+	height: auto;
+	display: block;
+	pointer-events: none;
+	border-radius: 30px;
+}
+
+@media screen and (max-width: 767px){
+	.main-container-1 .main-container-box .sub-title{
+		border-radius: 30px 30px 0 0;
+	}
+	.main-container-1 .main-container-box .grid-container{
+		grid-gap: 0px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.main-container-1 .main-container-box .grid-container .image-box img{
+		border-radius: 0;
+	}
+}
+
+.main-container-2{
+	width: 100%;
+	height: auto;
+	margin: 40px 0 0 0;
+	display: block;
+}
+
+.main-container-2 .main-container-box{
+	margin: 0 auto;
+	max-width: 980px;
+	display: block;
+	overflow: hidden;
+}
+
+.main-container-2 .main-container-box .grid-container{
+	grid-gap: 25px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 100%;
+	padding: 25px 0;
+	margin: 0;
+	overflow: auto;
+}
+
+.main-container-2 .main-container-box .grid-container .image-box img{
+	width: 100%;
+	height: auto;
+	display: block;
+	pointer-events: none;
+	border-radius: 30px;
+}
+
+@media screen and (max-width: 767px){
+	.main-container-2{
+		margin: 0;
+	}
+	.main-container-2 .main-container-box .grid-container{
+		grid-gap: 0px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.main-container-2 .main-container-box .grid-container .image-box img{
+		border-radius: 0;
+	}
+}
 
 footer{
 	position: relative;
