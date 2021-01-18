@@ -381,7 +381,9 @@ header .header-contain{
 	}
 
 	.main-container-1 .main-container-box .text-container .text-box p{
-		font-size: 14px;
+		font-size: 12px;
+		font-weight: 400;
+		margin: 3px 14px 0 14px;
 	}
 }
 
