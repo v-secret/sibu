@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equlv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="contact.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHQN_YPj8YhVcESs2diJMzaVhnLbbMngE&callback=initMap&libraries=&v=weekly" defer></script>
 </head>
 <body>
 <header>
@@ -73,6 +74,23 @@
 	<div class="main-container-2">
 		<div class="main-container-box">
 			<div class="sub-container">
+				<h4>Address</h4>
+				<p>Lot 7C, Block A, Jalan Pedada, 96000 Sibu, Sarawak, Malaysia.</p>
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
+	<div class="main-container-2">
+		<div class="main-container-box">
+			<div class="sub-container">
+				<h4>Tel. Number</h4>
+				<p>+60(84) - 311733</p>
+			</div>
+		</div>
+	</div>
+	<div class="main-container-2">
+		<div class="main-container-box">
+			<div class="sub-container">
 				<h4>Facebook</h4>
 				<a target="blank_" href="#"><button>Go</button></a>
 			</div>
@@ -132,5 +150,22 @@
 	</div>
 </footer>
 <script type="text/javascript" src="header.js"></script>
+<script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 2.289805, lng: 111.834194};
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 18,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+</script>
 </body>
 </html>

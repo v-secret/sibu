@@ -385,6 +385,14 @@ header .header-contain{
 	text-justify: inter-word
 }
 
+.main-container-2 .main-container-box .sub-container #map{
+	width: 100%;
+	height: 400px;
+	display: block;
+	border-radius: 30px;
+	margin: 20px 0 0 0;
+}
+
 .main-container-2 .main-container-box .sub-container button{
 	cursor: pointer;
     text-align: center;
