@@ -385,7 +385,13 @@ header .header-contain{
 	font-size: 22px;
 	font-weight: 500;
 	color: rgb(99,99,102);
-	margin: 0 0 15px 0;
+}
+
+.main-container-2 .main-container-box .sub-container h5{
+	font-size: 20px;
+	font-weight: 600;
+	color: black;
+	margin: 15px 0 0 0; 
 }
 
 .main-container-2 .main-container-box .sub-container li{
